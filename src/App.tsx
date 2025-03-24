@@ -1,9 +1,11 @@
 import Button from "./components/ButtonTs";
 import CounterTs from "./components/CounterTs";
 import "./App.css";
+import ContextApi from "./components/ContextApi/ContextApi";
+import CounterAdvanced from "./components/CounterAdvanced/CounterAdvanced";
 
 const greet = (name: string): string => {
-	return ` Hello ${name}`;
+	return `Hello ${name}`;
 };
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
 		<>
 			<Button onclick={handleClick} label={"Click me!"} />
 			<CounterTs />
+			<ContextApi />
+			<CounterAdvanced />
 		</>
 	);
 }
